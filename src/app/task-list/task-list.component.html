@@ -1,0 +1,12 @@
+<h2>Your Tasks</h2> <!-- Title for the task list -->
+<div *ngFor="let task of tasks; let i = index" class="task-card">
+        <h3>{{ task.title }}</h3>
+        <p>{{ task.description }}</p>
+        <p>Due: {{ task.dueDate | date }}</p>
+        <p>Priority: {{ task.priority }}</p>
+        <p>Status: {{ task.isComplete ? 'Completed' : 'Active' }}</p>
+        <div class="task-actions">
+          <button (click)="markAsComplete(task)">Complete</button>
+          <button (click)="deleteTask(i)">Delete</button>
+        </div>
+</div>

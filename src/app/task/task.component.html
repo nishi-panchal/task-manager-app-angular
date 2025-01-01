@@ -1,0 +1,6 @@
+<div class="task">
+    <h3>{{ title }}</h3>
+    <p> {{ description }}</p>
+    <p>Due: {{ dueDate | date }}</p>
+    <button (click)="markAsComplete()">Complete</button>
+</div>
