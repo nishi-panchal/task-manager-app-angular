@@ -1,9 +1,13 @@
 /* Task List Styles */
 .task-list {
     display: flex; /* Use flexbox for horizontal layout */
-    flex-wrap: wrap; /* Allow wrapping to the next line if necessary */
-    justify-content: space-between; /* Space out the cards */
+    flex-wrap: wrap;
+    justify-content: center; /* Space out the cards */
     margin: 20px; /* Margin around the task list */
+}
+
+h2 {
+    text-align: center;
 }
 
 .task-card {
